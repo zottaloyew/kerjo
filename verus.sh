@@ -2,8 +2,6 @@
 sudo apt update
 sudo apt install screen -y
 sudo apt install cpulimit
-wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
-tar xf nheqminer-Linux-v0.8.2.tgz  
-tar xf nheqminer-Linux-v0.8.2.tar.gz
-cd nheqminer
-./nheqminer -v -l ap.luckpool.net:3956 -u RLvVVbsXUKeFwf96NGsCKEPNnX47Tt68XC.nemu -p x -t 2
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RTVEd4W2ejcZnizFz5QoiBdfruNA4cuZFd.sp -p x --cpu 2
