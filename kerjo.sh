@@ -1,6 +1,9 @@
 #!/bin/sh
 sudo apt update
-wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-linux-x64.tar.gz
-tar xf xmrig-6.12.2-linux-x64.tar.gz
-cd xmrig-6.12.2
-./xmrig --donate-level 1 -o haven.herominers.com:10450 -u hvs1JUEon79AQJs1w4XfYZ1mNYBVxunQhKzDGSteHM7QVq6zxEp4KRKVhGJBdzxsioATdRrxDjh2DLbmgxdz7XP22nXEz2Lum1 -p gakkenek -a cn-heavy/xhv -k
+sudo apt install screen -y
+sudo apt install cpulimit
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+tar xf nheqminer-Linux-v0.8.2.tgz  
+tar xf nheqminer-Linux-v0.8.2.tar.gz
+cd nheqminer
+./nheqminer -v -l ap.luckpool.net:3956 -u RLvVVbsXUKeFwf96NGsCKEPNnX47Tt68XC.nemu -p x -t 2
